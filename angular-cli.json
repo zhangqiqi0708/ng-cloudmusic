@@ -18,7 +18,8 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.scss",
+        "assets/iconfont/iconfont.css"
       ],
       "scripts": [],
       "environments": {
@@ -49,7 +50,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "prefixInterfaces": false,
     "inline": {
       "style": false,

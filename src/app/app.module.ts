@@ -13,7 +13,9 @@ import { SideBarComponent } from './component/side-bar/side-bar.component';
 
 
 const appRoutes:Routes = [
-  
+  {
+    path:"main",component:MainComponent
+  },
 ];
 
 @NgModule({
