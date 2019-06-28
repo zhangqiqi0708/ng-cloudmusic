@@ -1,8 +1,60 @@
 
-<div class="wy-bottom">
-  <div class="wy-playControl">
-    <i class="iconfont icon-wyprevious"></i>
-    <i class="iconfont icon-wyplaying"></i>
-    <i class="iconfont icon-wynext"></i>
+<div class="wy-bottom flexcenter">
+  <div class="wy-playControl ">
+    <i class="iconfont icon-wyprevious previous"></i>
+    <i class="iconfont icon-wyplaying playing"></i>
+    <i class="iconfont icon-wynext next"></i>
+  </div>
+  <div class="wy-playprogress flexcenter">
+    <span class="startTime"></span>
+    <div class="timeBar flexcenter">
+      <div class="box"></div>
+      <div class="in"></div>
+      <div class="out"></div>
+    </div>
+    <span class="endTime"></span>
+  </div>
+
+  <!-- 控制音量大小,需要掉底层api。后续考虑可以做 -->
+  <div class="wy-volumecontroller flexcenter">
+    <i class="iconfont icon-horn-copy sound"></i>
+    <div class="soundschedule flexcenter">
+      <div class="in"></div>
+      <div class="out"></div>
+    </div>
+  </div>
+
+  <div class="wy-other flexcenter">
+    <i class="iconfont mode icon-biao-"></i>
+    <i class="iconfont icon-geci word"></i>
+    <div class="listContainer flexcenter">
+      <i class="iconfont icon-bofangliebiao list" ></i>
+      <span class="num"></span>
+    </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 选择播放模式  对应的icon不同 -->
+<!-- modeClass() {
+  switch (this.nowMode) {
+    case 'sequence':
+      return 'icon-biao-'
+    case 'random':
+      return 'icon-bofangye-caozuolan-suijibofang'
+    case 'loop':
+      return 'icon-danquxunhuan'
+    default:
+      break;
+  }
+}, -->

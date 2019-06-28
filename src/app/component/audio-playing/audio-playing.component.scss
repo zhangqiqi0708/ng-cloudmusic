@@ -1,3 +1,137 @@
 .wy-bottom{
-    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #E1E1E2;
+    background: #f6f6f6;
+    z-index: 999;
+    .wy-playControl{
+        width: 200px;
+        i{
+            font-size: 36px;
+            color:#D23030;
+        }
+        .previous{
+            padding-left:30px;
+        }
+        .playing{
+            padding:0 20px;
+        }
+    }
+    .wy-playprogress{
+        flex:1;
+        margin-right: 10px;
+        span{
+            font-size: 14px;
+            padding: 0 10px;
+        }
+        .timeBar{
+            flex: 1;
+            padding:10px 0;
+            position: relative;
+            .box{
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                z-index: 99;
+                background:#f1f1f1;
+                top: 3px;
+                left: -6px;
+                border: 1px solid #c2c2c2;
+                &::before{
+                    content: '';
+                    width: 4px;
+                    height: 4px;
+                    position: absolute;
+                    left: 4px;
+                    top: 4px;
+                    background: #D23030;
+                    border-radius: 50%;
+                }
+            }
+
+
+            .in{
+                position: absolute;
+                width: 100%;
+                left: 0;
+                height: 4px;
+                background: #c2c2c2;
+                border-radius: 3px;
+            }
+            .out{
+                left: 0;
+                // width: 100%;
+                position: absolute;
+                height: 4px;
+                background: #D23030;
+                border-radius: 3px;
+            }
+        }
+    }
+    .wy-volumecontroller{
+        width: 130px;
+        .sound{
+            font-size: 20px;
+        }
+        .soundschedule{
+            width: 90px;
+            position: relative;
+            .in{
+                position: absolute;
+                width: 100%;
+                left: 0;
+                height: 4px;
+                background: #c2c2c2;
+                border-radius: 3px;
+            }
+            .out{
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                left: 0;
+                background:#D23030;
+                border-radius: 3px;
+            }
+        }
+    }
+    .wy-other{
+        width: 140px;
+        i{
+            font-size: 20px;
+        }
+        .mode{
+            padding-right: 10px;
+        }
+        .word{
+            padding-right: 10px;
+            color: #888888;
+            font-size: 25px;
+            position: relative;
+            top: 2px;
+        }
+        .listContainer{
+            width: 50px;
+            border-radius: 10px;
+            background: #E1E1E2;
+            .list{
+                font-size: 18px;
+                position: relative;
+                top: 2px;
+            }
+            .num{
+                font-size: 13px;
+                display: block;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.flexcenter{
+    display: flex;
+    align-items: center;
 }
