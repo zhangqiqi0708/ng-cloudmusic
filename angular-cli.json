@@ -19,7 +19,7 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
-        "assets/iconfont/iconfont.css"
+        "src/assets/iconfont/iconfont.css"
       ],
       "scripts": [],
       "environments": {
