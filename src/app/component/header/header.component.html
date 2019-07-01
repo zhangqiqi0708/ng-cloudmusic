@@ -3,14 +3,13 @@
 </p> -->
 
 <div class="wy-header flexcenter">
-  <div class="wy-logo">
+  <div class="wy-logo flexcenter">
     <i class="logo"></i>
-    <p class="name">wyyyy</p>
+    <p class="name">网易云音乐</p>
   </div>
   <div class="wy-search">
-    <span class="prev iconfont icon-zuo">
-      <span class="next iconfont icon-you"></span>
-    </span>
+    <span class="prev iconfont icon-zuo"></span>
+    <span class="next iconfont icon-you"></span>
     <input type="text" placeholder="搜索音乐,视频,歌词,电台">
     <i class="iconfont icon-sousou"></i>
     <i class="iconfont icon-code"></i>
@@ -18,7 +17,7 @@
   <div class="wy-headernav flexcenter">
     <i class="iconfont icon-geren"></i>
     <img class="wy-userimg" />
-    <p class="wy-state">未登录</p>
+    <p class="wy-state" (click)="showModal()">未登录</p>
     <!-- <p class="my-state">userName</p> -->
     <i class="iconfont icon-xiasanjiao"></i>
     <i class="iconfont icon-yify"></i>
@@ -30,4 +29,16 @@
     <i class="iconfont icon-code"></i>
   </div>
   
+  <!--登录弹窗-->
+  <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+    <p>Content one</p>
+    <p>Content two</p>
+    <p>Content three</p>
+  </nz-modal>
+
+  <!-- 退出确认弹框 -->
+  <!-- <nz-model></nz-model> -->
+
+  <!-- 搜索结果两个弹框    需要过渡效果 -->
+
 </div>
